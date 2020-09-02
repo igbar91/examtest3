@@ -242,7 +242,33 @@ public class DAO {
 		}
 		
 
-	
+	 public void deleteInfo(String id) {
+		 
+		 getConnection();
+		 
+		 try {
+			 
+			 String sql = "delete from course_tbl where id = ? ";
+			 pstmt = conn.prepareStatement(sql);
+			 pstmt.setString(1,  id);
+			 pstmt.executeUpdate();
+			 conn.close();
+			 
+			 
+			 
+			 
+		 }catch(Exception e) {
+			 e.printStackTrace();
+		 }
+		 
+		 
+		 
+		 
+		 
+	 }
+
+
+
 }//end
 
 

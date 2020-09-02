@@ -10,6 +10,9 @@
 h1{
 text-align:center;
 }
+table{
+margin-bottom:30px;
+}
 </style>
 <body>
 <h1>교과목 추가</h1>
@@ -62,8 +65,8 @@ text-align:center;
 <td><input type="text" name="end_end"></td></tr>
 
 <tr>
-<td align="center"><a href="index.jsp?center=classList.jsp">목록</a></td>
-<td align="center"><input type="submit" value="완료"></td></tr>
+<td align="center" colspan="2"><a href="index.jsp?center=classList.jsp"><button>목록</button></a>
+<input type="submit" value="완료"></td></tr>
 </table>
 </form>
 </body>

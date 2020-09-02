@@ -107,7 +107,7 @@ if(bean.getWeek()==1){
 
 <td>
 <a href="index.jsp?center=classUpdate.jsp?id=<%=bean.getId() %>">수정</a> / 
-<a href="index.jsp?center=classDelete.jsp">삭제</a>
+<a href="classDelete.jsp?id=<%=bean.getId() %>">삭제</a>
 </td>
 </tr>
 <%
